@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>视觉档案 | VISUAL ARCHIVE</title>
+    <meta name="description" content="50 个瞬间 · 50 个故事 · 纯粹视觉">
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+    <!-- ===== 密码保护层 ===== -->
+    <div class="password-overlay" id="passwordOverlay">
+        <div class="password-box">
+            <div class="lock-icon">🔒</div>
+            <h2>私人档案</h2>
+            <p class="password-hint">请输入访问密码</p>
+            <input type="password" 
+                   id="passwordInput" 
+                   class="password-input" 
+                   placeholder="密码" 
+                   maxlength="20"
+                   autocomplete="off">
+            <p class="password-error" id="passwordError"></p>
+            <button class="password-btn" id="unlockBtn">解锁</button>
+            <p class="password-tip">提示：纪念日 🌙</p>
+        </div>
+    </div>
+
+    <!-- ===== 网站内容 ===== -->
+    <div id="siteContent" style="display: none;">
+        <header>
+            <h1>视觉档案 | VISUAL ARCHIVE</h1>
+            <p class="subtitle">50 个瞬间 · 50 个故事 · 纯粹视觉</p>
+        </header>
+
+        <div class="gallery" id="gallery">
+            <!-- 图片会由 JavaScript 动态加载 -->
+        </div>
+
+        <footer>
+            <p>© 2026 seamoon · All images reserved</p>
+            <p class="links">
+                <a href="https://seamoon520.carrd.co" target="_blank">carrd.co</a>
+                <span>·</span>
+                <a href="https://github.com" target="_blank">GitHub</a>
+            </p>
+        </footer>
+
+        <!-- 图片放大遮罩 -->
+        <div class="lightbox" id="lightbox">
+            <span class="lightbox-close">&times;</span>
+            <img class="lightbox-img" id="lightbox-img">
+            <div class="lightbox-caption" id="lightbox-caption"></div>
+        </div>
+    </div>
+
+    <script src="assets/script.js"></script>
+</body>
+</html>
