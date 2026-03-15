@@ -11,8 +11,7 @@ const images = [
     // 示例：
     // "01.jpg", "02.jpg", "03.jpg", ...
     
-    // 暂时用占位图，等你上传图片后替换
-    ...Array.from({ length: 50 }, (_, i) => `images/${String(i + 1).padStart(2, '0')}.jpg`)
+    ...Array.from({ length: 44 }, (_, i) => `images/${String(i + 1).padStart(2, '0')}.png`)
 ];
 
 // ===== 网站配置 =====
