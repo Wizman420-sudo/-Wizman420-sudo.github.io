@@ -11,14 +11,13 @@ const images = [
     // 示例：
     // "01.jpg", "02.jpg", "03.jpg", ...
     
-    ...Array.from({ length: 44 }, (_, i) => `images/image_${String(i + 1).padStart(2, '0')}.png`),
-    ...Array.from({ length: 653 }, (_, i) => `images/image_${i + 45}.jpg`)
+    ...Array.from({ length: 653 }, (_, i) => `images/image_${String(i + 1).padStart(2, '0')}.jpg`)
 ];
 
 // ===== 网站配置 =====
 const config = {
     title: "视觉档案 | VISUAL ARCHIVE",
-    subtitle: "697 个瞬间 · 697 个故事 · 纯粹视觉",
+    subtitle: "653 个瞬间 · 653 个故事 · 纯粹视觉",
     footer: "© 2026 seamoon · All images reserved"
 };
 
