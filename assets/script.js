@@ -11,13 +11,14 @@ const images = [
     // 示例：
     // "01.jpg", "02.jpg", "03.jpg", ...
     
-    ...Array.from({ length: 44 }, (_, i) => `images/${String(i + 1).padStart(2, '0')}.png`)
+    ...Array.from({ length: 44 }, (_, i) => `images/image_${String(i + 1).padStart(2, '0')}.png`),
+    ...Array.from({ length: 653 }, (_, i) => `images/image_${i + 45}.jpg`)
 ];
 
 // ===== 网站配置 =====
 const config = {
     title: "视觉档案 | VISUAL ARCHIVE",
-    subtitle: "50 个瞬间 · 50 个故事 · 纯粹视觉",
+    subtitle: "697 个瞬间 · 697 个故事 · 纯粹视觉",
     footer: "© 2026 seamoon · All images reserved"
 };
 
@@ -244,3 +245,4 @@ console.log('%c🌙 VISUAL ARCHIVE', 'font-size: 24px; font-weight: bold; color:
 console.log('%cBuilt with ❤️ for seamoon', 'font-size: 12px; color: #666;');
 console.log('%c🔒 Password: 520', 'font-size: 10px; color: #444;');
 console.log('%cType clearAuth() to logout', 'font-size: 10px; color: #444;');
+console.log(`%c📸 Total images: ${images.length}`, 'font-size: 10px; color: #444;');
