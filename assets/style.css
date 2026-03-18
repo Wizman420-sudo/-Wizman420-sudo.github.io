@@ -160,6 +160,96 @@ body {
     overflow-x: hidden;
 }
 
+/* ===== 其他模特精彩视频专区 ===== */
+.promo-section {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 60px 30px;
+    background: rgba(20, 20, 20, 0.6);
+    border-radius: 20px;
+    border: 1px solid rgba(139, 92, 246, 0.2);
+    box-shadow: 0 0 60px rgba(139, 92, 246, 0.15);
+    text-align: center;
+}
+
+.promo-section h2 {
+    font-size: clamp(1.5rem, 4vw, 2.2rem);
+    background: linear-gradient(90deg, #8B5CF6, #06B6D4);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 25px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.promo-desc {
+    color: #999999;
+    font-size: 1rem;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.promo-note {
+    color: #666666;
+    font-size: 0.9rem;
+    margin-bottom: 30px;
+    padding: 15px;
+    background: rgba(139, 92, 246, 0.1);
+    border-radius: 10px;
+    border: 1px solid rgba(139, 92, 246, 0.2);
+}
+
+.price-list {
+    background: rgba(30, 30, 30, 0.5);
+    padding: 30px;
+    border-radius: 16px;
+    border: 1px solid rgba(6, 182, 212, 0.2);
+}
+
+.price-list h3 {
+    font-size: 1.4rem;
+    color: #06B6D4;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+.price-list ul {
+    list-style: none;
+    padding: 0;
+}
+
+.price-list li {
+    padding: 15px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    font-size: 1.1rem;
+    color: #ffffff;
+}
+
+.price-list li:last-child {
+    border-bottom: none;
+}
+
+.price-list li strong {
+    color: #8B5CF6;
+}
+
+.price-en {
+    display: block;
+    color: #666666;
+    font-size: 0.9rem;
+    margin-top: 5px;
+}
+
+.promo-footer {
+    margin-top: 25px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    color: #888888;
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
 /* ===== 页头 ===== */
 header {
     text-align: center;
